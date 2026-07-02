@@ -8,14 +8,14 @@ This project is built with **Java**, **Spring Boot**, and **Maven** as a learnin
 
 ## Technologies
 
-* Java 21 (LTS)
-* Spring Boot 3.5.x
-* Maven
-* Spring Web
-* Spring Data JPA
-* REST API
-* Lombok
-* YAML configuration (`application.yml`)
+- Java 21 (LTS)
+- Spring Boot 3.5.x
+- Maven
+- Spring Data JPA
+- REST API
+- Lombok
+- YAML configuration (`application.yml`)
+- SonarQube for code quality management
 
 ---
 
@@ -73,7 +73,7 @@ mvn clean     # Remove build artifacts
 
 ## Project Status
 
-🚧 This project is currently under active development.
+This project is currently under active development.
 
 ### Planned Features
 

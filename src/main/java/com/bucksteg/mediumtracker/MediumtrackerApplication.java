@@ -8,6 +8,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
+import com.bucksteg.mediumtracker.entity.Game;
+import com.bucksteg.mediumtracker.enums.MediumStatus;
+import com.bucksteg.mediumtracker.enums.Platform;
+import com.bucksteg.mediumtracker.repository.GameRepository;
+
 @SpringBootApplication
 public class MediumtrackerApplication {
 
@@ -16,17 +21,33 @@ public class MediumtrackerApplication {
 	}
 
 	@Bean
-  	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+  	public CommandLineRunner demo(GameRepository gameRepository) {
     	return args -> {
 
-      	System.out.println("Let's inspect the beans provided by Spring Boot:");
-
-      	String[] beanNames = ctx.getBeanDefinitionNames();
-		Arrays.sort(beanNames);
-		for (String beanName : beanNames) {
-			System.out.println(beanName);
-		}
+      	gameRepository.save(new Game(
+			"Elden Ring", 
+			2022,
+			5, 
+			MediumStatus.COMPLETED, 
+			Platform.PS5, 
+			120.0)
+		);
+		gameRepository.save(new Game(
+			"Silksong", 
+			2025, 
+			5, 
+			MediumStatus.COMPLETED, 
+			Platform.PC, 
+			69.0)
+		);
+		gameRepository.save(new Game(
+			"Silksong", 
+			2025, 
+			5, 
+			MediumStatus.COMPLETED, 
+			Platform.PC, 
+			69.0)
+		);
 	};
   }
-
 }
