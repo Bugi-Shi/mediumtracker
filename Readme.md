@@ -53,8 +53,8 @@ http://localhost:8080
 | Endpoint | Description           |
 | -------- | --------------------- |
 | `/`      | Overview of all media |
-| `/game`  | Game API              |
-| `/movie` | Movie API             |
+| `/games` | Game API              |
+| `/movies`| Movie API             |
 
 ---
 
@@ -80,12 +80,12 @@ This project is currently under active development.
 * [x] Basic Spring Boot project structure
 * [x] Entity inheritance using `Medium`
 * [x] Movie entity
-* [ ] Extend the Game entity
+* [x] Game entity
 * [ ] Database integration
 * [ ] CRUD REST API
-* [ ] DTOs
-* [ ] Service layer
-* [ ] Global exception handling
+* [x] DTOs
+* [x] Service layer
+* [x] Global exception handling
 * [ ] Unit and integration tests
 * [ ] Swagger / OpenAPI documentation
 * [ ] AuthenticatiWon & Authorization
