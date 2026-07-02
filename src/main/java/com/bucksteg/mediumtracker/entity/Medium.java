@@ -12,10 +12,12 @@ import jakarta.persistence.InheritanceType;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 /*
@@ -26,7 +28,7 @@ TABLE_PER_CLASS → Jede Unterklasse bekommt ihre eigene vollständige Tabelle.
 public abstract class Medium {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id;                //Long kann null sein
     private String title;
     private int year;
     private int rating;

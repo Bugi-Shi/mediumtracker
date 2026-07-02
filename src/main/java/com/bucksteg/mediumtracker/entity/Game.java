@@ -9,10 +9,12 @@ import jakarta.persistence.Enumerated;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString(callSuper = true)
 @Entity
 public class Game extends Medium {
     @Enumerated(EnumType.STRING)
