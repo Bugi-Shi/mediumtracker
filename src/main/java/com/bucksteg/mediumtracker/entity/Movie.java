@@ -20,8 +20,9 @@ public class Movie extends Medium {
         int year,
         int rating,
         MediumStatus status,
+        Integer finishedYear,
         int durationMinutes) {
-            super(title, year, rating, status);
+            super(title, year, rating, status, finishedYear);
             this.durationMinutes = durationMinutes;
     }
 

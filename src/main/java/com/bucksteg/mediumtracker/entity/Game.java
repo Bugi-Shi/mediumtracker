@@ -26,9 +26,10 @@ public class Game extends Medium {
         int year,
         int rating,
         MediumStatus status,
+        Integer finishedYear,
         Platform platform, 
         Double playTime) {
-            super(title, year, rating, status);
+            super(title, year, rating, status, finishedYear);
             this.platform = platform;
             this.playTime = playTime;
     }
