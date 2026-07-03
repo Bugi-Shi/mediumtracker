@@ -46,6 +46,12 @@ The API will then be available at:
 http://localhost:8080
 ```
 
+Swagger UI
+
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
 ---
 
 ## Available Endpoints
@@ -81,11 +87,11 @@ This project is currently under active development.
 * [x] Entity inheritance using `Medium`
 * [x] Movie entity
 * [x] Game entity
-* [ ] Database integration
-* [ ] CRUD REST API
+* [x] Database integration
+* [x] CRUD REST API
 * [x] DTOs
 * [x] Service layer
 * [x] Global exception handling
 * [ ] Unit and integration tests
-* [ ] Swagger / OpenAPI documentation
+* [x] Swagger / OpenAPI documentation
 * [ ] AuthenticatiWon & Authorization
